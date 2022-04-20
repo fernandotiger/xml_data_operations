@@ -20,10 +20,10 @@ import com.example.xmlcalculator.util.XmlManagerUtil;
 public class XmlcalculatorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(XmlcalculatorApplication.class, args);
+		
 		
 		XmlManagerUtil loader = new XmlManagerUtil(args[0], args[1], args[2]);
-		//XmlManagerUtil loader = new XmlManagerUtil("C:\\Fernando\\test_xml\\_data.xml", "C:\\Fernando\\test_xml\\operations.xml", "C:\\Fernando\\test_xml\\output.xml");
+		//XmlManagerUtil loader = new XmlManagerUtil("x:\\xxxx\\xxxx\\_data.xml", "x:\\xxxx\\xxxx\\operations.xml", "x:\\xxxx\\xxxx\\output.xml");
 		try {
 			loader.initXmlLoader();
 			List<CityEntity> dataList = loader.loadData().getDataList();
